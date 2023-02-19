@@ -12,11 +12,11 @@ const me = {
   // TODO - add properties here
     firstName: 'Anthony',
     lastName: 'Cole',
-    hasSiblings: 'yes',
+    hasSiblings: true,
     shoeCount: 8,
     faveThreeFoods: ['pizza', 'fruit snacks', 'code red'],
-    favoriteColor: 'White',
-};
+    
+}
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties.
@@ -46,7 +46,7 @@ console.log('My last favorite food is', me.faveThreeFoods[2]);
   - Console.log your updated shoe count. 
 */
 console.log(me.shoeCount);
-console.log(me.shoeCount++);
+me['shoeCount'] = 9; // update the value for shoeCount.
 console.log(me.shoeCount);
 
 
@@ -56,4 +56,5 @@ console.log(me.shoeCount);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'white'; // added a favoriteColor variable to my 'me' object.
 console.log('this is the updated me!', me);
